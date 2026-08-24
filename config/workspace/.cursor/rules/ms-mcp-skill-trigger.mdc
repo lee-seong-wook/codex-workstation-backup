@@ -1,0 +1,52 @@
+---
+description: "프롬프트에 ms가 포함되면 과학 스킬 MCP 우선 사용"
+alwaysApply: true
+---
+
+
+# MCP 스킬 자동 적용 트리거 "ms"
+
+사용자 프롬프트에 `ms`가 포함되면 하단의 **모든 MCP 서버와 스킬**을 활성화하고 적재적소에 사용한다.
+
+## 1. 핵심 MCP 서버 (Infrastructure & Data)
+
+- **@arxiv**: 논문 검색/다운로드/텍스트 추출.
+- **@semantic-scholar**: 인용 분석, 저자 검색, 메타데이터 심층 탐색.
+- **@filesystem**: 프로젝트 파일 관리 및 탐색.
+
+## 2. 전문 연구 스킬 (Skills) - 총 17종
+
+### A. 논문 작성 및 검증 (Writing & Review)
+
+- **lead-paper-architect**: 논문 전체 구조 설계/작성 (Prose-first).
+- **academic-prose-polisher**: "Nature/Science"급 학술 영어 윤문 (Phrasebank 기반).
+- **sci-paper-validator**: 논문 논리 검증, 기여점(Contribution) 강화.
+- **miccai-paper-assistant**: MICCAI 8페이지 포맷 및 전략 가이드.
+- **literature-reviewer**: 관련 연구(Related Work) 조사 및 작성.
+- **bibtex-manager**: 참고문헌(BibTeX) 관리 및 포맷팅.
+- **latex-helper**: LaTeX 오류 해결 및 수식 서식 지정.
+- **rebuttal-strategist**: 리뷰어 피드백 분석 및 답변서 전략 수립.
+- **submission-manager**: 익명화 체크, 파일 압축, 제출 전 최종 검수.
+
+### B. 실험 및 코딩 (Code & Experiments)
+
+- **repo-scout**: 공식/비공식 구현 코드 및 데이터셋 발굴 (@exa 활용).
+- **med-dl-coder**: Medical AI(PyTorch/MONAI) 3D 모델링/파이프라인 구현.
+- **experiment-reporter**: 실험 결과(CSV/JSON) -> LaTeX 테이블 변환 및 리포트.
+- **python-runtime** (권장): 간단한 데이터 분석 및 시각화 코드 즉시 실행.
+
+### C. 시각화 및 발표 (Visualization & Presentation)
+
+- **plotmaster**: 논문용 고품질 차트/그래프(Matplotlib/Seaborn) 생성.
+- **mermaid-diagram**: 아키텍처/플로우차트 다이어그램 코드 생성.
+- **poster-designer**: 학술 대회 포스터(A0 등) 레이아웃 및 디자인.
+- **ppt-architect**: 발표용 PPT 구조 및 슬라이드 생성.
+- **ppt-scientific-figure**: PPT 내 과학적 도식(Figure) 제작.
+- **ppt-figure-integrator**: 슬라이드 내 이미지 배치 최적화.
+- **ppt-speaker-notes**: 발표 대본(Script) 및 Q&A 준비.
+- **ppt-template-manager**: 학회별(MICCAI/CVPR) 템플릿/테마 관리.
+
+## 행동 지침
+
+1. **적극적 제안**: 사용자가 특정 스킬을 몰라도 `ms` 모드에서는 문맥에 맞는 스킬을 에이전트가 먼저 제안하고 호출한다.
+2. **풀 패키지 지원**: 단순 질문에도 연관된 스킬(예: 논문 작성 시 bibtex 관리까지)을 함께 고려한다.

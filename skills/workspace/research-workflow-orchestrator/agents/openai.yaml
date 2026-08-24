@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Workflow Orchestrator"
+  short_description: "Coordinate end-to-end research work across literature, analysis, and manuscript stages."
+  default_prompt: "Use $research-workflow-orchestrator to resume my research project from mixed papers, logs, and drafts and route the next stage correctly."

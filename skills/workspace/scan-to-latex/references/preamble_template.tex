@@ -1,0 +1,80 @@
+% ============================================================
+% Scan-to-LaTeX 기본 프리앰블 템플릿
+% 책의 특성에 맞게 수정하여 사용
+% ============================================================
+
+\documentclass[11pt,a4paper]{book}
+
+% --- 페이지 레이아웃 ---
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+
+% --- 인코딩 & 폰트 ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% --- 한글 지원 (필요시 주석 해제) ---
+% \usepackage[hangul]{kotex}
+
+% --- 수학 ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+
+% --- 정리 환경 ---
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+
+% --- 그래픽 ---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+% --- 표 ---
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+
+% --- 알고리즘 ---
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+% --- 코드 ---
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  tabsize=4
+}
+
+% --- 기타 ---
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+
+% --- 사용자 정의 명령 ---
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\argmin}{\operatorname{argmin}}
+
+% ============================================================
+\begin{document}
+
+% \input{chapter01.tex}
+% \input{chapter02.tex}
+
+\end{document}

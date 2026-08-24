@@ -1,0 +1,148 @@
+approval_policy = "never"
+model = "gpt-5.6-sol"
+model_context_window = 800000
+model_auto_compact_token_limit = 700000
+model_reasoning_effort = "xhigh"
+personality = "pragmatic"
+sandbox_mode = "danger-full-access"
+service_tier = "default"
+
+[features]
+chronicle = false
+memories = false
+goals = true
+js_repl = false
+
+[marketplaces.claude-plugins-official]
+last_updated = "2026-08-24T06:05:52Z"
+last_revision = "340e33aef211d95769d252324854497af871dafe"
+source_type = "git"
+source = "https://github.com/anthropics/claude-plugins-official.git"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = '\\?\{{CODEX_HOME}}\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-codex]
+last_updated = "2026-08-24T06:05:17Z"
+last_revision = "db52e28f4d9ded852ab3942cea316258ae4ef346"
+source_type = "git"
+source = "https://github.com/openai/codex-plugin-cc.git"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-20T00:47:40Z"
+source_type = "local"
+source = '\\?\{{USER_PROFILE}}\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[mcp_servers.github]
+env_vars = ["GITHUB_PERSONAL_ACCESS_TOKEN"]
+args = [
+    "-y",
+    "@modelcontextprotocol/server-github",
+]
+command = "npx"
+
+[mcp_servers.hwp]
+args = ['{{WORKSPACE_ROOT}}\mcp\hwp-mcp\hwp_mcp_stdio_server.py']
+command = "python"
+cwd = '{{WORKSPACE_ROOT}}\mcp\hwp-mcp'
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+enabled = true
+
+[mcp_servers.notion]
+url = "https://mcp.notion.com/mcp"
+
+[memories]
+no_memories_if_mcp_or_web_search = true
+generate_memories = false
+use_memories = false
+
+[plugins."binance@openai-curated"]
+enabled = true
+
+[plugins."codex@openai-codex"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."linear@openai-curated"]
+enabled = true
+
+[plugins."notion@openai-curated"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."superpowers@claude-plugins-official"]
+enabled = true
+
+[plugins."latex@openai-bundled"]
+enabled = true
+
+[plugins."zotero@openai-curated"]
+enabled = true
+
+[plugins."openai-developers@openai-curated"]
+enabled = true
+
+[plugins."test-android-apps@openai-curated"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[windows]
+sandbox = "elevated"
+
+[desktop]
+sansFontSize = 13
+codeFontSize = 13
+followUpQueueMode = "steer"
+composerEnterBehavior = "cmdIfMultiline"
+reviewDelivery = "detached"
+localeOverride = "ko-KR"
+conversationDetailMode = "STEPS_PROSE"
+worktree-keep-count = 7
+keepRemoteControlAwakeWhilePluggedIn = true
+selected-avatar-id = "stacky"
+open-link-in-target-preference = "in-app-browser"
+
+[desktop.open-in-target-preferences]
+global = "vscode"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 1
+
+
+[projects.'{{WORKSPACE_ROOT}}']
+trust_level = "trusted"

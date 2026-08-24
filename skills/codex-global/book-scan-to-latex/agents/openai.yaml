@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Scan to LaTeX"
+  short_description: "Turn scanned book pages into page-aligned LaTeX."
+  default_prompt: "Use $book-scan-to-latex to convert scanned textbook page images into one LaTeX file with figure placeholders and one output page per source image."

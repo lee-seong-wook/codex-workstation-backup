@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "{{WORKSPACE_ROOT}}"
+      ]
+    },
+    "notion": {
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "semantic-scholar": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "semantic-scholar-mcp",
+        "semantic-scholar-mcp"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "exa": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server",
+        "--tools=web_search_exa,research_paper_search,crawling,github_search,wikipedia_search_exa"
+      ],
+      "env": {
+        "EXA_API_KEY": "${env:EXA_API_KEY}"
+      }
+    }
+  }
+}

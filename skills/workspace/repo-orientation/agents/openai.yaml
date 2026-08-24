@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Orientation"
+  short_description: "Map an unfamiliar repo before coding"
+  default_prompt: "Use $repo-orientation to map this repository before making changes."

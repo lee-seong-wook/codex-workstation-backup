@@ -1,0 +1,494 @@
+[
+  {
+    "id": "explicit_single_skill",
+    "prompt": "이번에는 peer-review 스킬 써서 논문 심사해줘",
+    "mode": "exact",
+    "expected": ["peer-review"]
+  },
+  {
+    "id": "explicit_multiple_skills",
+    "prompt": "plotmaster 스킬이랑 bibtex-manager 스킬 둘 다 써줘",
+    "mode": "contains_all",
+    "expected": ["plotmaster", "bibtex-manager"]
+  },
+  {
+    "id": "extension_pdf_file",
+    "prompt": "results.pdf 요약해줘",
+    "mode": "exact",
+    "expected": ["pdf"]
+  },
+  {
+    "id": "extension_pptx_file",
+    "prompt": "final_talk.pptx 파일 수정해줘",
+    "mode": "exact",
+    "expected": ["pptx"]
+  },
+  {
+    "id": "extension_pptx_keyword_ko",
+    "prompt": "발표자료 슬라이드 템플릿 정리해줘",
+    "mode": "exact",
+    "expected": ["pptx"]
+  },
+  {
+    "id": "extension_docx_file",
+    "prompt": "manuscript.docx 문장 다듬어줘",
+    "mode": "exact",
+    "expected": ["doc"]
+  },
+  {
+    "id": "extension_ipynb_file",
+    "prompt": "experiment.ipynb 만들어줘",
+    "mode": "exact",
+    "expected": ["jupyter-notebook"]
+  },
+  {
+    "id": "extension_spreadsheet_csv",
+    "prompt": "metrics.csv 분석해줘",
+    "mode": "exact",
+    "expected": ["spreadsheet"]
+  },
+  {
+    "id": "extension_priority_over_intent",
+    "prompt": "bug가 있는데 report.pdf 먼저 확인해줘",
+    "mode": "exact",
+    "expected": ["pdf"]
+  },
+  {
+    "id": "intent_bug_ko",
+    "prompt": "테스트 실패 원인 찾고 버그 고쳐줘",
+    "mode": "exact",
+    "expected": ["systematic-debugging"]
+  },
+  {
+    "id": "intent_debug_strategy",
+    "prompt": "root cause analysis 방식으로 디버깅 전략 잡아줘",
+    "mode": "exact",
+    "expected": ["debugging-strategies"]
+  },
+  {
+    "id": "intent_deploy_vercel",
+    "prompt": "배포하려고 하는데 vercel로 올려줘",
+    "mode": "exact",
+    "expected": ["vercel-deploy"]
+  },
+  {
+    "id": "intent_deploy_netlify",
+    "prompt": "host this site on netlify and publish",
+    "mode": "exact",
+    "expected": ["netlify-deploy"]
+  },
+  {
+    "id": "intent_deploy_render",
+    "prompt": "render로 deploy 진행해줘",
+    "mode": "exact",
+    "expected": ["render-deploy"]
+  },
+  {
+    "id": "intent_deploy_cloudflare",
+    "prompt": "cloudflare에 배포하고 싶어",
+    "mode": "exact",
+    "expected": ["cloudflare-deploy"]
+  },
+  {
+    "id": "intent_fix_ci",
+    "prompt": "GitHub actions failing이라서 CI 실패 고쳐줘",
+    "mode": "exact",
+    "expected": ["gh-fix-ci"]
+  },
+  {
+    "id": "intent_pr_comments",
+    "prompt": "GitHub PR 코멘트 반영해줘, review comments 처리해줘",
+    "mode": "exact",
+    "expected": ["gh-address-comments"]
+  },
+  {
+    "id": "intent_linear",
+    "prompt": "linear ticket 업데이트해줘",
+    "mode": "exact",
+    "expected": ["linear"]
+  },
+  {
+    "id": "intent_sentry",
+    "prompt": "Sentry issue 최근 프로덕션 에러 보여줘",
+    "mode": "exact",
+    "expected": ["sentry"]
+  },
+  {
+    "id": "intent_sora",
+    "prompt": "sora로 영상 생성해줘",
+    "mode": "exact",
+    "expected": ["sora"]
+  },
+  {
+    "id": "intent_speech",
+    "prompt": "TTS voiceover 나레이션 파일 만들어줘",
+    "mode": "exact",
+    "expected": ["speech"]
+  },
+  {
+    "id": "intent_transcribe",
+    "prompt": "회의 녹음 전사하고 화자 분리해줘",
+    "mode": "exact",
+    "expected": ["transcribe"]
+  },
+  {
+    "id": "intent_figma",
+    "prompt": "figma url 기반으로 디자인 구현해줘",
+    "mode": "contains_any",
+    "expected": ["figma", "figma-implement-design"]
+  },
+  {
+    "id": "intent_security_best",
+    "prompt": "보안 베스트 프랙티스 관점으로 secure coding review 해줘",
+    "mode": "exact",
+    "expected": ["security-best-practices"]
+  },
+  {
+    "id": "intent_threat_model",
+    "prompt": "trust boundary 포함해서 위협 모델링 해줘",
+    "mode": "exact",
+    "expected": ["security-threat-model"]
+  },
+  {
+    "id": "intent_security_ownership",
+    "prompt": "bus factor on sensitive code 분석해줘",
+    "mode": "exact",
+    "expected": ["security-ownership-map"]
+  },
+  {
+    "id": "intent_openai_docs",
+    "prompt": "openai docs 기반으로 오픈AI API 사용법 알려줘",
+    "mode": "exact",
+    "expected": ["openai-docs"]
+  },
+  {
+    "id": "intent_find_skills",
+    "prompt": "스킬 찾아줘, 이런 스킬 있어?",
+    "mode": "exact",
+    "expected": ["find-skills"]
+  },
+  {
+    "id": "intent_install_skill",
+    "prompt": "curated skill 설치해줘",
+    "mode": "exact",
+    "expected": ["skill-installer"]
+  },
+  {
+    "id": "intent_create_skill",
+    "prompt": "스킬 만들기와 스킬 업데이트 같이 해줘",
+    "mode": "exact",
+    "expected": ["skill-creator"]
+  },
+  {
+    "id": "intent_manage_skills",
+    "prompt": "스킬 점검하고 verify skill drift sync 해줘",
+    "mode": "exact",
+    "expected": ["manage-skills"]
+  },
+  {
+    "id": "intent_peer_review",
+    "prompt": "논문 리뷰를 리뷰어처럼 해줘",
+    "mode": "exact",
+    "expected": ["peer-review"]
+  },
+  {
+    "id": "intent_manuscript_revision",
+    "prompt": "논문 첨삭이랑 원고 교정 해줘",
+    "mode": "exact",
+    "expected": ["scientific-manuscript-review"]
+  },
+  {
+    "id": "intent_write_paper_from_notes",
+    "prompt": "paper drafting 좀 해줘, 원고 초안 작성 필요해",
+    "mode": "exact",
+    "expected": ["research-paper-writer"]
+  },
+  {
+    "id": "intent_related_work",
+    "prompt": "선행연구 비교 분석해서 related work 써줘",
+    "mode": "exact",
+    "expected": ["literature-reviewer"]
+  },
+  {
+    "id": "planning_brainstorming",
+    "prompt": "새 기능 추가하고 동작 변경하려고 해",
+    "mode": "exact",
+    "expected": ["brainstorming"]
+  },
+  {
+    "id": "planning_writing_plans",
+    "prompt": "요구사항 기반 작업이니까 구현 계획 세워줘",
+    "mode": "exact",
+    "expected": ["writing-plans"]
+  },
+  {
+    "id": "planning_executing_plans",
+    "prompt": "계획 실행으로 진행해줘",
+    "mode": "exact",
+    "expected": ["executing-plans"]
+  },
+  {
+    "id": "planning_verification_before_completion",
+    "prompt": "완료 보고 직전이니까 검증 먼저 해줘",
+    "mode": "exact",
+    "expected": ["verification-before-completion"]
+  },
+  {
+    "id": "planning_verify_implementation",
+    "prompt": "통합 검증 보고서 만들어줘",
+    "mode": "exact",
+    "expected": ["verify-implementation"]
+  },
+  {
+    "id": "research_literature_review",
+    "prompt": "체계적 문헌고찰 리뷰를 진행해줘",
+    "mode": "contains_any",
+    "expected": ["literature-review", "literature-reviewer"]
+  },
+  {
+    "id": "research_academic_paper_writing",
+    "prompt": "논문 작성 도와줘",
+    "mode": "contains_any",
+    "expected": ["scientific-writing", "lead-paper-architect"]
+  },
+  {
+    "id": "research_miccai_variant",
+    "prompt": "미카이 논문 형식 맞춰줘",
+    "mode": "exact",
+    "expected": ["miccai-paper-assistant"]
+  },
+  {
+    "id": "research_rebuttal",
+    "prompt": "리뷰어 답변 리버털 작성 도와줘",
+    "mode": "exact",
+    "expected": ["rebuttal-strategist"]
+  },
+  {
+    "id": "research_bibtex",
+    "prompt": "참고문헌 엔트리와 BibTeX 정리해줘",
+    "mode": "exact",
+    "expected": ["bibtex-manager"]
+  },
+  {
+    "id": "research_polish_prose",
+    "prompt": "학술 문장 다듬기 해줘",
+    "mode": "exact",
+    "expected": ["academic-prose-polisher"]
+  },
+  {
+    "id": "research_advisor_like",
+    "prompt": "지도교수처럼 논문 방향 코칭해줘",
+    "mode": "contains_all",
+    "expected": ["lead-paper-architect", "scientific-manuscript-review"]
+  },
+  {
+    "id": "research_sci_validation",
+    "prompt": "SCI 검증이랑 리뷰어 시뮬레이션 해줘",
+    "mode": "exact",
+    "expected": ["sci_paper_validator"]
+  },
+  {
+    "id": "research_med_dl_and_pyhealth",
+    "prompt": "MONAI 기반 의료영상 딥러닝 코드 작성해줘",
+    "mode": "contains_all",
+    "expected": ["med_dl_coder", "pyhealth"]
+  },
+  {
+    "id": "research_plotmaster",
+    "prompt": "논문 그림 그래프 생성해줘",
+    "mode": "exact",
+    "expected": ["plotmaster"]
+  },
+  {
+    "id": "research_schematics",
+    "prompt": "과학 도식 아키텍처 다이어그램 만들어줘",
+    "mode": "exact",
+    "expected": ["scientific-schematics"]
+  },
+  {
+    "id": "research_poster",
+    "prompt": "학회 포스터 디자인 만들어줘",
+    "mode": "contains_any",
+    "expected": ["poster-designer", "latex-posters"]
+  },
+  {
+    "id": "composite_end_to_end_miccai",
+    "prompt": "Drafting a new MICCAI manuscript end-to-end 진행해줘",
+    "mode": "exact",
+    "expected": ["research-paper-writer", "miccai-paper-assistant", "lead-paper-architect"]
+  },
+  {
+    "id": "composite_polishing_submission",
+    "prompt": "Manuscript polishing for submission 해줘",
+    "mode": "exact",
+    "expected": ["scientific-manuscript-review", "academic-prose-polisher"]
+  },
+  {
+    "id": "composite_precheck",
+    "prompt": "Reviewer-style precheck before submission 진행해줘",
+    "mode": "exact",
+    "expected": ["peer-review", "sci_paper_validator"]
+  },
+  {
+    "id": "composite_related_work",
+    "prompt": "Related-work writing from literature search 도와줘",
+    "mode": "exact",
+    "expected": ["literature-review", "literature-reviewer"]
+  },
+  {
+    "id": "composite_submission_package",
+    "prompt": "Final submission package checks 부탁해",
+    "mode": "exact",
+    "expected": ["bibtex-manager", "submission_manager"]
+  },
+  {
+    "id": "explicit_overrides_extension",
+    "prompt": "doc 파일인데 pdf 스킬로 처리해줘 report.docx",
+    "mode": "exact",
+    "expected": ["pdf"]
+  },
+  {
+    "id": "extension_over_other_intent",
+    "prompt": "skills 설치 얘기는 나중에 하고 지금 slides 만들어줘",
+    "mode": "exact",
+    "expected": ["pptx"]
+  },
+  {
+    "id": "no_match_general_chat",
+    "prompt": "오늘 컨디션 어때?",
+    "mode": "exact",
+    "expected": []
+  },
+  {
+    "id": "personal_manage_check",
+    "prompt": "지금 스킬들 확인하고 매니징해줘",
+    "mode": "exact",
+    "expected": ["manage-skills"]
+  },
+  {
+    "id": "personal_manage_global_local",
+    "prompt": "전역 스킬이랑 로컬 스킬 차이 포함해서 점검해줘",
+    "mode": "exact",
+    "expected": ["manage-skills"]
+  },
+  {
+    "id": "personal_manage_auto_use",
+    "prompt": "스킬 자동 사용하게 하고 싶은데 스킬 관리해줘",
+    "mode": "exact",
+    "expected": ["manage-skills"]
+  },
+  {
+    "id": "personal_find_skill",
+    "prompt": "논문 도와주는 추천 스킬 찾아줘",
+    "mode": "exact",
+    "expected": ["find-skills"]
+  },
+  {
+    "id": "personal_install_skill_local",
+    "prompt": "여기 폴더에 스킬 설치해줘",
+    "mode": "exact",
+    "expected": ["skill-installer"]
+  },
+  {
+    "id": "personal_manuscript_edit_1",
+    "prompt": "논문 수정 좀 해줘",
+    "mode": "exact",
+    "expected": ["scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_manuscript_edit_2",
+    "prompt": "원고 수정하고 문장 교정해줘",
+    "mode": "exact",
+    "expected": ["scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_paper_analysis_related_work",
+    "prompt": "이 논문 분석해서 related work 정리해줘",
+    "mode": "exact",
+    "expected": ["literature-reviewer"]
+  },
+  {
+    "id": "personal_miccai_phrase",
+    "prompt": "미카이 논문 작성중인데 형식 맞춰줘",
+    "mode": "exact",
+    "expected": ["miccai-paper-assistant"]
+  },
+  {
+    "id": "personal_advisor_like_feedback",
+    "prompt": "지도교수처럼 논문 첨삭해줘",
+    "mode": "contains_all",
+    "expected": ["lead-paper-architect", "scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_rebuttal_variant",
+    "prompt": "리뷰어 코멘트 답변 작성 도와줘",
+    "mode": "exact",
+    "expected": ["rebuttal-strategist"]
+  },
+  {
+    "id": "personal_bibtex_entry",
+    "prompt": "참고문헌 bibtex 엔트리 추가해줘",
+    "mode": "exact",
+    "expected": ["bibtex-manager"]
+  },
+  {
+    "id": "personal_submission_packaging",
+    "prompt": "제출 전에 익명화랑 제출 패키징 점검해줘",
+    "mode": "exact",
+    "expected": ["submission_manager"]
+  },
+  {
+    "id": "personal_plot_ablation",
+    "prompt": "논문용 ablation 그래프 그려줘",
+    "mode": "exact",
+    "expected": ["plotmaster"]
+  },
+  {
+    "id": "personal_scientific_diagram",
+    "prompt": "방법 아키텍처 도식 만들어줘",
+    "mode": "exact",
+    "expected": ["scientific-schematics"]
+  },
+  {
+    "id": "personal_peer_review_style",
+    "prompt": "리뷰어처럼 사전 심사해줘",
+    "mode": "exact",
+    "expected": ["peer-review"]
+  },
+  {
+    "id": "personal_literature_survey",
+    "prompt": "체계적 문헌고찰로 서베이 정리해줘",
+    "mode": "contains_any",
+    "expected": ["literature-review", "literature-reviewer"]
+  },
+  {
+    "id": "personal_paper_draft_from_notes",
+    "prompt": "내 노트로 논문 초안 작성해줘",
+    "mode": "exact",
+    "expected": ["research-paper-writer"]
+  },
+  {
+    "id": "personal_polish_before_submission",
+    "prompt": "submission 전에 논문 첨삭하고 문장 다듬어줘",
+    "mode": "exact",
+    "expected": ["scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_professor_mode_ko",
+    "prompt": "교수님 모드로 이 논문 피드백해줘",
+    "mode": "exact",
+    "expected": ["lead-paper-architect", "scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_professor_mode_en",
+    "prompt": "Use professor mode and coach this manuscript",
+    "mode": "exact",
+    "expected": ["lead-paper-architect", "scientific-manuscript-review"]
+  },
+  {
+    "id": "personal_no_match_chat",
+    "prompt": "고마워 잘자",
+    "mode": "exact",
+    "expected": []
+  }
+]

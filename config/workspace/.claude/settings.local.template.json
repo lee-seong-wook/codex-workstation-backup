@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:bun.com)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Skill(research-relay)",
+      "WebFetch(domain:github.com)"
+    ],
+    "deny": []
+  }
+}

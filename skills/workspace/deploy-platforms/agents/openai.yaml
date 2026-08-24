@@ -1,0 +1,3 @@
+interface:
+  display_name: "Deploy Platforms"
+  short_description: "Deploy and debug Vercel, Netlify, Render, and Cloudflare apps."

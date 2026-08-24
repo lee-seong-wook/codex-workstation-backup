@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Setter"
+  short_description: "Save evidence-backed Goal specs (dual-runtime: Codex + Claude)"
+  default_prompt: "Use $goal-setter to turn this task into a strong evidence-backed Goal file. Save it under goals/<goal-name>.md so it can be activated later via `/goal @...` (Codex) or by loading the file in a Claude conversation."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sentry Issue Routing"
+  short_description: "Investigate Sentry production issues and regressions."

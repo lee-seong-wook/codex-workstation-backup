@@ -1,0 +1,3 @@
+interface:
+  display_name: "Media Tools"
+  short_description: "Route TTS, transcription, and video-generation workflows."

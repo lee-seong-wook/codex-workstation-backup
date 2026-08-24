@@ -1,0 +1,32 @@
+# Credentials and machine-local environment files
+.env
+.env.*
+!.env.example
+auth.json
+*credential*
+*credentials*
+*secret*
+*.pem
+*.key
+
+# Runtime state, caches, and logs
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.wal
+*.pyc
+__pycache__/
+node_modules/
+.cache/
+cache/
+sessions/
+cookies/
+
+# Restore safety backups and local scratch data
+*.backup-*
+.restore-test/
+tmp/
+.snapshot-stage-*/
+.snapshot-previous-*/

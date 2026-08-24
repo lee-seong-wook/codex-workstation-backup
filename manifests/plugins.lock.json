@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-08-24T06:54:04.1966481Z",
+  "activePluginCount": 21,
+  "plugins": [
+    {
+      "id": "binance@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "5.0.1",
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add binance@openai-curated",
+      "requiresAuthentication": true
+    },
+    {
+      "id": "browser@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "26.818.41509"
+      ],
+      "installCommand": "codex plugin add browser@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "chrome@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "26.814.41957",
+        "26.818.41509",
+        "latest"
+      ],
+      "installCommand": "codex plugin add chrome@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "codex-app-tools@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "0.1.0"
+      ],
+      "installCommand": "codex plugin add codex-app-tools@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "codex@openai-codex",
+      "marketplace": "openai-codex",
+      "enabled": true,
+      "observedVersions": [
+        "1.0.6"
+      ],
+      "installCommand": "codex plugin add codex@openai-codex",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "computer-use@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "26.818.41509"
+      ],
+      "installCommand": "codex plugin add computer-use@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "documents@openai-primary-runtime",
+      "marketplace": "openai-primary-runtime",
+      "enabled": true,
+      "observedVersions": [
+        "26.819.11345"
+      ],
+      "installCommand": "codex plugin add documents@openai-primary-runtime",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "github@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "0.1.11-5f7cd798dc99",
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add github@openai-curated",
+      "requiresAuthentication": true
+    },
+    {
+      "id": "latex@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "0.2.6"
+      ],
+      "installCommand": "codex plugin add latex@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "linear@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add linear@openai-curated",
+      "requiresAuthentication": true
+    },
+    {
+      "id": "notion@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "0.1.7",
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add notion@openai-curated",
+      "requiresAuthentication": true
+    },
+    {
+      "id": "openai-developers@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "1.2.2",
+        "1.2.3",
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add openai-developers@openai-curated",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "pdf@openai-primary-runtime",
+      "marketplace": "openai-primary-runtime",
+      "enabled": true,
+      "observedVersions": [
+        "26.819.11345"
+      ],
+      "installCommand": "codex plugin add pdf@openai-primary-runtime",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "presentations@openai-primary-runtime",
+      "marketplace": "openai-primary-runtime",
+      "enabled": true,
+      "observedVersions": [
+        "26.819.11345"
+      ],
+      "installCommand": "codex plugin add presentations@openai-primary-runtime",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "sites@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "0.1.43"
+      ],
+      "installCommand": "codex plugin add sites@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "spreadsheets@openai-primary-runtime",
+      "marketplace": "openai-primary-runtime",
+      "enabled": true,
+      "observedVersions": [
+        "26.819.11345"
+      ],
+      "installCommand": "codex plugin add spreadsheets@openai-primary-runtime",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "superpowers@claude-plugins-official",
+      "marketplace": "claude-plugins-official",
+      "enabled": true,
+      "observedVersions": [
+        "6.3.0"
+      ],
+      "installCommand": "codex plugin add superpowers@claude-plugins-official",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "template-creator@openai-primary-runtime",
+      "marketplace": "openai-primary-runtime",
+      "enabled": true,
+      "observedVersions": [
+        "26.819.11345"
+      ],
+      "installCommand": "codex plugin add template-creator@openai-primary-runtime",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "test-android-apps@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add test-android-apps@openai-curated",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "visualize@openai-bundled",
+      "marketplace": "openai-bundled",
+      "enabled": true,
+      "observedVersions": [
+        "1.0.22"
+      ],
+      "installCommand": "codex plugin add visualize@openai-bundled",
+      "requiresAuthentication": false
+    },
+    {
+      "id": "zotero@openai-curated",
+      "marketplace": "openai-curated",
+      "enabled": true,
+      "observedVersions": [
+        "d6169bef"
+      ],
+      "installCommand": "codex plugin add zotero@openai-curated",
+      "requiresAuthentication": true
+    }
+  ],
+  "externalSources": [
+    {
+      "name": "gstack",
+      "repository": "https://github.com/garrytan/gstack.git",
+      "commit": "db9447c3339950bb0506c547e5b3225f5def3854",
+      "installTarget": "{{USER_PROFILE}}/.gstack/repos/gstack",
+      "setup": "Git Bash: bash ./setup"
+    }
+  ],
+  "reauthentication": [
+    "GitHub",
+    "Notion",
+    "Linear",
+    "Zotero",
+    "Binance"
+  ]
+}

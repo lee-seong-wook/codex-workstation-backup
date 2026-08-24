@@ -1,0 +1,17 @@
+interface:
+  display_name: "Goal Setter"
+  short_description: "Save evidence-backed Goal specs as reviewable markdown files (Claude-side)"
+  default_prompt: |
+    Use the goal-setter skill to turn this task into a strong evidence-backed Goal file.
+    1. Interview for outcome, evidence, constraints, scope, autonomy, budget, blocked condition, reporting.
+    2. Save the contract to goals/<goal-name>.md under the selected workspace folder.
+    3. Include both activation lines in the file:
+       - Codex:  /goal @goals/<goal-name>.md
+       - Claude: open a new conversation and say
+         `@goals/<goal-name>.md 의 contract 를 끝까지 진행해줘. 증거가 충족되거나 blocked 조건이 되면 멈춰.`
+    4. Do not auto-activate. Leave activation as an explicit user action.
+
+activation_notes:
+  - "Claude does not have a literal `/goal` command. The activation phrase is whatever the user types in a new conversation that references the saved Goal file."
+  - "Optionally mirror the Goal as a top-level TaskCreate after the user confirms activation; the markdown file remains the source of truth."
+  - "In Cowork mode, save under the user-selected workspace folder. If no folder is selected, request one before writing."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Medical Deep Learning"
+  short_description: "Guide medical imaging, MONAI, PyHealth, and clinical ML work."
